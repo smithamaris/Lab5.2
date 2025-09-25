@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="container-registration-form"novalidate>
+      <h2>Register</h2>
+
+      <div class="form-group">
+
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required minlength="3" />
+        <span class="error" id="username-error"></span>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <span class="error" id="email-error"></span>
+
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required minlength="6"  />
+        <span class="error" id="password-error"></span>
+
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" name="confirm-password" id="confirm-password" required />
+        <span class="error" id="confirm-password-error"></span>
+
+        <!-- <button type="submit">Register</button> -->
+
+        <input type="submit" value="Register" class="submit-button" />
+      </div>
+    </form>
+  </body>
+</html>
